@@ -39,3 +39,13 @@ Commits semânticos: `feat`, `fix`, `docs`, `style`, `refactor`, `test`, `chore`
 ## Autor
 
 Vinicius Alvino
+
+## Testes e integração contínua
+
+```
+npm install
+npm test            # executa os testes
+npm run test:cov    # executa os testes com relatório de cobertura
+```
+
+Os testes (Jest) ficam em `tests/` e cobrem as regras de `src/`: validação de telefone, data e nome, fila de espera, montagem de grupos e o fluxo de integração cadastro, fila e grupo. O pipeline em `.github/workflows/ci.yml` roda os testes a cada push e Pull Request.
