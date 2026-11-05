@@ -10,4 +10,11 @@ function montarGrupo(fila, vagas) {
   return elegiveis.slice(0, vagas);
 }
 
-module.exports = { ordenarFila, montarGrupo };
+const exportsFila = { ordenarFila, montarGrupo };
+
+/* istanbul ignore else */
+if (typeof module !== 'undefined' && module.exports) {
+  module.exports = exportsFila;
+} else {
+  window.Fila = exportsFila;
+}
