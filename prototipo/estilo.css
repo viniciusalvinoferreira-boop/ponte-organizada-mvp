@@ -10,7 +10,7 @@ main{padding:16px}
 h1{font-size:22px;margin:4px 0 12px}
 label{display:block;font-weight:bold;margin:14px 0 6px}
 .obrig{font-weight:normal;color:#444;font-size:14px}
-input[type=text],input[type=password],select{width:100%;min-height:48px;font-size:17px;padding:8px 12px;border:2px solid var(--borda);border-radius:8px;background:#fff;color:var(--texto)}
+input[type=text],input[type=password],input[type=email],input[type=tel],input[type=number],select{width:100%;min-height:48px;font-size:17px;padding:8px 12px;border:2px solid var(--borda);border-radius:8px;background:#fff;color:var(--texto)}
 input:focus,select:focus,button:focus,a:focus{outline:4px solid #FFB000;outline-offset:2px}
 .foco{outline:4px solid #FFB000;outline-offset:2px}
 .btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;min-width:48px;padding:0 18px;border-radius:8px;border:2px solid var(--azul);background:var(--azul);color:#fff;font-size:17px;font-weight:bold;text-decoration:none;width:100%;margin-top:16px}
