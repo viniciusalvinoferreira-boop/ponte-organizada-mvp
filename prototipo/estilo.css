@@ -1,7 +1,7 @@
 :root{--azul:#0B4F8A;--azul-esc:#083A66;--texto:#1A1A1A;--fundo:#F4F6F8;--borda:#5B6770;--ok:#0B6B2E;--ok-bg:#E3F4E8;--av:#7A4E00;--av-bg:#FFF3D1;--er:#A4121B;--er-bg:#FDE8E8}
 *{box-sizing:border-box}
 body{margin:0;background:var(--fundo);color:var(--texto);font-family:Arial,Helvetica,sans-serif;font-size:17px;line-height:1.45}
-.app{width:430px;margin:0 auto;background:#fff;min-height:100vh;border-left:1px solid #D0D5DA;border-right:1px solid #D0D5DA}
+.app{width:100%;max-width:430px;margin:0 auto;background:#fff;min-height:100vh;border-left:1px solid #D0D5DA;border-right:1px solid #D0D5DA}
 header.topo{background:var(--azul);color:#fff;padding:14px 16px;display:flex;justify-content:space-between;align-items:center}
 header.topo .marca{font-size:20px;font-weight:bold}
 header.topo .perfil{font-size:14px}
