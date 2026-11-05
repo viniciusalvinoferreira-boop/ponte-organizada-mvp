@@ -29,9 +29,7 @@ prototipo/   protótipo navegável das telas (HTML e CSS)
 docs/        documentação do projeto, como os requisitos do MVP
 ```
 
-O código do MVP será adicionado em novas pastas conforme o desenvolvimento avançar.
-
-## Como ver o protótipo
+## Como executar
 
 Abra `app/index.html` no navegador. O acesso é de demonstração (qualquer email válido e senha com 4 ou mais caracteres), e os dados ficam salvos só no navegador (localStorage). No menu, o botão "Carregar dados de exemplo" preenche a fila para testar. O protótipo original continua em `prototipo/index.html`.
 
