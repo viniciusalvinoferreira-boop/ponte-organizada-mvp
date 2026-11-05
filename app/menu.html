@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ponte Organizada: Menu inicial</title>
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body data-pagina="menu">
+<a class="pular" href="#conteudo">Pular para o conteúdo</a>
+<div class="app">
+<header class="topo"><div><div class="marca">Ponte Organizada</div><div class="perfil" id="perfil"></div></div><button class="btn-sair" id="sair" type="button">Sair</button></header>
+<main id="conteudo">
+<h1>O que você quer fazer?</h1>
+<div id="avisos"></div>
+<a class="cartao" href="fila.html"><span class="ic" aria-hidden="true">⏳</span><span>Fila de espera<small>Ver quem aguarda vaga e montar grupos</small></span></a>
+<a class="cartao" href="cadastro.html"><span class="ic" aria-hidden="true">👤</span><span>Alunos<small>Cadastrar alunos e associados</small></span></a>
+<a class="cartao" href="grupos.html"><span class="ic" aria-hidden="true">👥</span><span>Grupos<small>Ver os grupos de cada projeto</small></span></a>
+<button class="btn sec" id="exemplo" type="button">Carregar dados de exemplo</button>
+<button class="btn sec" id="limpar" type="button">Apagar todos os dados</button>
+</main>
+</div>
+<script src="../src/validacao.js"></script>
+<script src="../src/fila.js"></script>
+<script src="../src/cadastro.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
