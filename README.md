@@ -22,14 +22,15 @@ O instituto organiza hoje alunos, fila de espera e grupos por projeto em planilh
 ## Estrutura do repositório
 
 ```
-prototipo/   protótipo navegável das telas (HTML e CSS): login, menu, fila e cadastro
+prototipo/   protótipo navegável das telas (HTML e CSS)
+docs/        documentação do projeto, como os requisitos do MVP
 ```
 
 O código do MVP será adicionado em novas pastas conforme o desenvolvimento avançar.
 
 ## Como ver o protótipo
 
-Abra `prototipo/tela1-login.html` no navegador.
+Abra `prototipo/index.html` no navegador e navegue pelas telas pelo índice. Não há instalação nem dependências.
 
 ## Convenção de commits
 
