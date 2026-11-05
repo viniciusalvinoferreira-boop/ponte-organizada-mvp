@@ -1,0 +1,20 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Ponte Organizada: Cadastrar aluno</title><link rel="stylesheet" href="estilo.css"></head><body>
+<div class="app">
+<header class="topo"><div><div class="marca">Ponte Organizada</div><div class="perfil">Olá, Rosi (Equipe)</div></div><button class="btn-sair" type="button">Sair</button></header>
+<main>
+<div class="alerta ok" role="status"><span aria-hidden="true">✔</span><span>Grupo Futsal A criado com 3 alunos</span></div>
+<h1>Cadastrar aluno</h1>
+<div class="alerta av" role="alert"><span aria-hidden="true">⚠</span><span>Este aluno já está cadastrado</span></div>
+<label for="n">Nome completo <span class="obrig">(obrigatório)</span></label>
+<input id="n" type="text" value="Ana Souza">
+<label for="d">Data de nascimento <span class="obrig">(obrigatório)</span></label>
+<input id="d" type="text" value="10/05/2012">
+<div class="campo-erro"><label for="t">Telefone de contato <span class="obrig">(obrigatório)</span></label>
+<input id="t" class="foco" type="text" value="9999-99" aria-describedby="et">
+<div id="et" class="msg-er">✖ Telefone inválido: informe DDD e número</div></div>
+<label for="v">Tipo de vínculo <span class="obrig">(obrigatório)</span></label>
+<select id="v"><option>Aluno</option></select>
+<button class="btn" type="button">Salvar</button>
+<a class="btn sec" href="#">Cancelar</a>
+<a class="btn sec" href="#">Voltar ao menu</a>
+</main></div></body></html>
