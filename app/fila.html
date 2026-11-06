@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ponte Organizada: Fila de espera</title>
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body data-pagina="fila">
+<a class="pular" href="#conteudo">Pular para o conteúdo</a>
+<div class="app">
+<header class="topo"><div><div class="marca">Ponte Organizada</div><div class="perfil" id="perfil"></div></div><button class="btn-sair" id="sair" type="button">Sair</button></header>
+<main id="conteudo">
+<h1>Fila de espera</h1>
+<div id="avisos"></div>
+<label for="p">Projeto</label>
+<select id="p"></select>
+<label for="vagas">Vagas no grupo</label>
+<input id="vagas" type="number" min="1" max="50" value="5" style="width:100%;min-height:48px;font-size:17px;padding:8px 12px;border:2px solid #5B6770;border-radius:8px">
+<div class="contador" id="contador" role="status" aria-live="polite"></div>
+<div id="lista"></div>
+<form id="form-grupo" novalidate>
+<label for="g">Nome do grupo <span class="obrig">(obrigatório)</span></label>
+<input id="g" type="text" placeholder="Futsal A">
+<button class="btn" type="submit">Montar grupo</button>
+</form>
+<a class="btn sec" href="menu.html">Voltar ao menu</a>
+</main>
+</div>
+<script src="../src/validacao.js"></script>
+<script src="../src/fila.js"></script>
+<script src="../src/cadastro.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

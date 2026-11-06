@@ -22,15 +22,16 @@ O instituto organiza hoje alunos, fila de espera e grupos por projeto em planilh
 ## Estrutura do repositório
 
 ```
+app/         interface web funcional (HTML, CSS e JavaScript)
+src/         regras de negócio testadas (validação, fila e grupos)
+tests/       testes unitários e de integração (Jest)
 prototipo/   protótipo navegável das telas (HTML e CSS)
 docs/        documentação do projeto, como os requisitos do MVP
 ```
 
-O código do MVP será adicionado em novas pastas conforme o desenvolvimento avançar.
+## Como executar
 
-## Como ver o protótipo
-
-Abra `prototipo/index.html` no navegador e navegue pelas telas pelo índice. Não há instalação nem dependências.
+Abra `app/index.html` no navegador. O acesso é de demonstração (qualquer email válido e senha com 4 ou mais caracteres), e os dados ficam salvos só no navegador (localStorage). No menu, o botão "Carregar dados de exemplo" preenche a fila para testar. O protótipo original continua em `prototipo/index.html`.
 
 ## Convenção de commits
 

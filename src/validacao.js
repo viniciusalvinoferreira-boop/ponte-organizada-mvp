@@ -21,4 +21,11 @@ function nomeValido(texto) {
   return nome.length >= 3 && /\s/.test(nome);
 }
 
-module.exports = { telefoneValido, dataNascimentoValida, nomeValido };
+const exportsValidacao = { telefoneValido, dataNascimentoValida, nomeValido };
+
+/* istanbul ignore else */
+if (typeof module !== 'undefined' && module.exports) {
+  module.exports = exportsValidacao;
+} else {
+  window.Validacao = exportsValidacao;
+}

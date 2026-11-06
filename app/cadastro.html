@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ponte Organizada: Cadastrar aluno</title>
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body data-pagina="cadastro">
+<a class="pular" href="#conteudo">Pular para o conteúdo</a>
+<div class="app">
+<header class="topo"><div><div class="marca">Ponte Organizada</div><div class="perfil" id="perfil"></div></div><button class="btn-sair" id="sair" type="button">Sair</button></header>
+<main id="conteudo">
+<h1>Cadastrar aluno</h1>
+<div id="avisos"></div>
+<form id="form-cadastro" novalidate>
+<div><label for="n">Nome completo <span class="obrig">(obrigatório)</span></label>
+<input id="n" type="text" autocomplete="off"></div>
+<div><label for="d">Data de nascimento <span class="obrig">(obrigatório, dd/mm/aaaa)</span></label>
+<input id="d" type="text" inputmode="numeric" placeholder="10/05/2012" autocomplete="off"></div>
+<div><label for="t">Telefone de contato <span class="obrig">(obrigatório, com DDD)</span></label>
+<input id="t" type="tel" placeholder="(11) 98765-4321" autocomplete="tel"></div>
+<label for="v">Tipo de vínculo <span class="obrig">(obrigatório)</span></label>
+<select id="v"><option>Aluno</option><option>Associado</option></select>
+<label for="p">Fila de espera do projeto <span class="obrig">(obrigatório)</span></label>
+<select id="p"></select>
+<button class="btn" type="submit">Salvar</button>
+</form>
+<a class="btn sec" href="menu.html">Voltar ao menu</a>
+</main>
+</div>
+<script src="../src/validacao.js"></script>
+<script src="../src/fila.js"></script>
+<script src="../src/cadastro.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
