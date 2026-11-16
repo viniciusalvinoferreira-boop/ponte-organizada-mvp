@@ -1,0 +1,26 @@
+name: Monitoramento
+
+on:
+  schedule:
+    - cron: '*/15 * * * *'
+  workflow_dispatch:
+
+jobs:
+  disponibilidade:
+    runs-on: ubuntu-latest
+    env:
+      URL: https://viniciusalvinoferreira-boop.github.io/ponte-organizada-mvp/app/
+    steps:
+      - name: Verifica se a aplicacao responde
+        run: |
+          for tentativa in 1 2 3; do
+            codigo=$(curl -s -o pagina.html -w "%{http_code}" --max-time 20 "$URL" || echo 000)
+            echo "Tentativa $tentativa: HTTP $codigo"
+            if [ "$codigo" = "200" ] && grep -q "Ponte Organizada" pagina.html; then
+              echo "STATUS UP: $URL respondeu 200 com o conteudo esperado em $(date -u +%d/%m/%Y\ %H:%M) UTC"
+              exit 0
+            fi
+            sleep 10
+          done
+          echo "STATUS DOWN: $URL nao respondeu como esperado"
+          exit 1
