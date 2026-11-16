@@ -50,3 +50,9 @@ npm run test:cov    # executa os testes com relatório de cobertura
 ```
 
 Os testes (Jest) ficam em `tests/` e cobrem as regras de `src/`: validação de telefone, data e nome, fila de espera, montagem de grupos e o fluxo de integração cadastro, fila e grupo. O pipeline em `.github/workflows/ci.yml` roda os testes a cada push e Pull Request.
+
+## Publicação e monitoramento
+
+A aplicação é publicada no GitHub Pages a partir da branch `main` e fica em https://viniciusalvinoferreira-boop.github.io/ponte-organizada-mvp/app/. Cada merge na `main` gera uma nova publicação automaticamente.
+
+O workflow `Monitoramento` (`.github/workflows/monitoramento.yml`) acessa a aplicação a cada 15 minutos e falha, com status DOWN, se ela não responder 200 com o conteúdo esperado. A falha aparece na aba Actions e o GitHub avisa por email.
